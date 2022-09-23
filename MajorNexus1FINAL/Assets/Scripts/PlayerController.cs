@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Animations;
 
 public class PlayerController : MonoBehaviour
 {
 
     private Rigidbody2D rb2D;
+    public GameObject BotonNivel1;
 
     [Header("Movimiento")]
     private float movimientoHorizontal = 0f;
@@ -43,6 +45,8 @@ public class PlayerController : MonoBehaviour
             salto = true;
         }
     }
+
+    
 
     private void FixedUpdate()
     {
