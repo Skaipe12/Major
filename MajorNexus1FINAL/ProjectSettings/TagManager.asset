@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - NPC
   layers:
   - Default
   - TransparentFX
@@ -40,4 +41,19 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Fondo
+    uniqueID: 2490342017
+    locked: 0
+  - name: Suelo
+    uniqueID: 883798521
+    locked: 0
+  - name: Objetos
+    uniqueID: 2376191135
+    locked: 0
+  - name: Enemigos
+    uniqueID: 2767887139
+    locked: 0
+  - name: Player
+    uniqueID: 2609056147
     locked: 0
