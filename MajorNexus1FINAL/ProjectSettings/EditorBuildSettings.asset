@@ -15,6 +15,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Inicio.unity
     guid: c3e3d620d3e7ea24997d05205088202d
   - enabled: 1
-    path: Assets/Scenes/Prueba.unity
+    path: Assets/Scenes/JuegoOhH1.unity
     guid: 16e9dc343f9b44f49ba331b35c78e2df
+  - enabled: 0
+    path: Assets/Scenes/OhH1Ganar.unity
+    guid: 51dacb22badaf4d43b41fc2922cdfd84
+  - enabled: 1
+    path: Assets/Scenes/OhH1Gana.unity
+    guid: 95dac6859999cc9478702c6f76b618a6
   m_configObjects: {}

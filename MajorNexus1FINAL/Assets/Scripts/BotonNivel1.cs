@@ -31,7 +31,7 @@ public class BotonNivel1 : MonoBehaviour
 
     public void EntrarNivel()
     {
-        SceneManager.LoadScene("Prueba");
+        SceneManager.LoadScene("JuegoOhH1");
     }
 
 
