@@ -5,8 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class MenúInicial : MonoBehaviour
 {
+
+    GameObject SceneLoadManager;
+
     public void Jugar()
     {
+        //SceneLoadManager.GetComponent<SceneLoadManager>().LoadNextScene();
         SceneManager.LoadScene("Inicio");
     }
 
@@ -14,6 +18,11 @@ public class MenúInicial : MonoBehaviour
     {
         Debug.Log("Salir...");
         Application.Quit();
+    }
+
+    public void Awake()
+    {
+        SceneLoadManager = GameObject.Find("SceneLoadManager");
     }
     
     

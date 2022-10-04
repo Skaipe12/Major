@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -34,5 +35,5 @@ public class BotonNivel1 : MonoBehaviour
         SceneManager.LoadScene("JuegoOhH1");
     }
 
-
+    
 }
