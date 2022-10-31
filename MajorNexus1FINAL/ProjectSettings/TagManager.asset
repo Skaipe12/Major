@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - NPC
+  - Mirror
+  - Objetos
+  - CajaAzul
+  - CajaRoja
+  - CajaAmarilla
+  - controller
+  - Capsula
+  - Hexagono
   layers:
   - Default
   - TransparentFX
@@ -15,7 +24,7 @@ TagManager:
   - Enemigos
   - Objetos
   - Suelo
-  - 
+  - Trampas
   - 
   - 
   - 
