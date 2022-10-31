@@ -5,6 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - NPC
+  - Mirror
+  - Objetos
+  - CajaAzul
+  - CajaRoja
+  - CajaAmarilla
+  - controller
+  - Capsula
+  - Hexagono
   layers:
   - Default
   - TransparentFX
@@ -16,7 +24,7 @@ TagManager:
   - Enemigos
   - Objetos
   - Suelo
-  - 
+  - Trampas
   - 
   - 
   - 
@@ -57,3 +65,6 @@ TagManager:
   - name: Player
     uniqueID: 2609056147
     locked: 0
+  - name: Trampas
+    uniqueID: 4175588681
+    locked: 1

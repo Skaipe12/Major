@@ -16,7 +16,7 @@ public class CameraController : MonoBehaviour
         if (player.CompareTag("Player"))
         {
             jugador = player;
-            Debug.Log("Hola");
+            
         }
         else if (player.CompareTag("NPC"))
         {
