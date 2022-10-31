@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - NPC
+  - Mirror
+  - Objetos
+  - CajaAzul
+  - CajaRoja
+  - CajaAmarilla
+  - controller
+  - Capsula
+  - Hexagono
   layers:
   - Default
   - TransparentFX
@@ -15,7 +24,7 @@ TagManager:
   - Enemigos
   - Objetos
   - Suelo
-  - 
+  - Trampas
   - 
   - 
   - 
@@ -42,17 +51,20 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: Fondo
-    uniqueID: 3464395959
+    uniqueID: 2490342017
     locked: 0
   - name: Suelo
-    uniqueID: 3234716805
+    uniqueID: 883798521
     locked: 0
   - name: Objetos
-    uniqueID: 2966540909
+    uniqueID: 2376191135
     locked: 0
   - name: Enemigos
-    uniqueID: 3384166113
+    uniqueID: 2767887139
     locked: 0
   - name: Player
-    uniqueID: 3174619609
+    uniqueID: 2609056147
     locked: 0
+  - name: Trampas
+    uniqueID: 4175588681
+    locked: 1
