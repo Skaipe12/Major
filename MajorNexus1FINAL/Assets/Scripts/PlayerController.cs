@@ -1,13 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Animations;
 
 public class PlayerController : MonoBehaviour
 {
 
     private Rigidbody2D rb2D;
-    public GameObject BotonNivel1;
 
     [Header("Movimiento")]
     private float movimientoHorizontal = 0f;
@@ -48,14 +46,13 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter2D(Collider2D coliision)
-    {
-        if (coliision.gameObject.layer == trampasLayer)
+    void OnTriggerEnter2D(Collider2D collision) {
+
+        if(collision.gameObject.layer == trampasLayer)
         {
             Debug.Log("muerto");
         }
     }
-    
 
     private void FixedUpdate()
     {

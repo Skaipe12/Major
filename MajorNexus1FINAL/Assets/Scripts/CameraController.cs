@@ -10,7 +10,25 @@ public class CameraController : MonoBehaviour
     public float suavizado;
     Vector2 velocidad;
 
+    public void changePlayer(GameObject player)
+    {
+
+        if (player.CompareTag("Player"))
+        {
+            jugador = player;
+            
+        }
+        else if (player.CompareTag("NPC"))
+        {
+            jugador = player;
+        }
+
+    }
+
+
     
+
+
     // Start is called before the first frame update
     void Start()
     {
