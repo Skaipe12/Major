@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
     public Vector3 dimensionesCaja;
     public bool enSuelo;
     private bool salto = false;
+    int trampasLayer;
 
     [Header("Animacion")]
     private Animator animator;
@@ -32,6 +33,7 @@ public class PlayerController : MonoBehaviour
     {
         rb2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        trampasLayer = LayerMask.NameToLayer("Trampas");
     }
 
     private void Update()
@@ -46,6 +48,13 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    void OnTriggerEnter2D(Collider2D coliision)
+    {
+        if (coliision.gameObject.layer == trampasLayer)
+        {
+            Debug.Log("muerto");
+        }
+    }
     
 
     private void FixedUpdate()
