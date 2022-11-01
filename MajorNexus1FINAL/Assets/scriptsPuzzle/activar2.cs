@@ -14,10 +14,11 @@ public class activar2 : MonoBehaviour
     {
         if (other.GetComponent<BoxCollider2D>().CompareTag("CajaAzul"))
         {
-  
             StartCoroutine("wait");
-            
             onTrigger = true;
+        }
+        else { 
+        
         }
     }
 
