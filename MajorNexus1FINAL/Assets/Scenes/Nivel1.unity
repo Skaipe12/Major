@@ -363,6 +363,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cuadrado1: 49
   cuadrado: {fileID: 708288197}
+  plataforma: {fileID: 0}
 --- !u!1 &35285719
 GameObject:
   m_ObjectHideFlags: 0
@@ -4530,7 +4531,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &373969078
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8383,6 +8384,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cuadrado1: 50
   cuadrado: {fileID: 603522819}
+  plataforma: {fileID: 373969077}
 --- !u!1 &749927615
 GameObject:
   m_ObjectHideFlags: 0
@@ -8566,6 +8568,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cuadrado1: 52
   cuadrado: {fileID: 282170350}
+  plataforma: {fileID: 0}
 --- !u!1 &757567702
 GameObject:
   m_ObjectHideFlags: 0
@@ -13973,6 +13976,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cuadrado1: 51
   cuadrado: {fileID: 833290735}
+  plataforma: {fileID: 0}
 --- !u!1 &1297264760
 GameObject:
   m_ObjectHideFlags: 0
@@ -14789,7 +14793,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1371006574}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 36.01, y: -66.46, z: -0.19}
+  m_LocalPosition: {x: 28.04, y: -36.9, z: -0.19}
   m_LocalScale: {x: 0.29484573, y: 0.27143395, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
