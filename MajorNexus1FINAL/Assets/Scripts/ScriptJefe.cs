@@ -13,33 +13,47 @@ public class ScriptJefe : MonoBehaviour
 
     [SerializeField] private float vida;
 
-    //[SerializeField] private BarraDeVida BarraDeVida;
+    [SerializeField] private BarraDeVida BarraDeVida;
 
     [Header("Ataque")]
 
     [SerializeField] private Transform controladorAtaque;
     [SerializeField] private float radioAtaque;
     [SerializeField] private float dañoAtaque;
+    int trampasLayer;
 
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
         rbd2D = GetComponent<Rigidbody2D>();
-        //BarraDeVida.InicializarBarraDeVida(vida);
+        BarraDeVida.InicializarBarraDeVida(vida);
         jugador = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        trampasLayer = LayerMask.NameToLayer("Trampas");
     }
 
-    //public void TomarDaño(float daño) 
-    //{
-    //  vida -= daño;
-    //  barraDeVida.CambiarVidaActual(vida);
+   
 
-    //  if (vida <= 0) {
-    //      animator.SetTrigger("Muerte");
-    //  }
+    public void TomarDaño(float daño)
+    {
+        vida -= daño;
+        BarraDeVida.CambiarVidaActual(vida);
 
-    //}
+        if (vida <= 0)
+        {
+            animator.SetTrigger("Muerte");
+        }
+
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        if (collision.gameObject.layer == trampasLayer)
+        {
+            Debug.Log("on trigger");
+        }
+    }
 
     private void Muerte() {
         Destroy(gameObject);
@@ -64,6 +78,9 @@ public class ScriptJefe : MonoBehaviour
             if (collision.CompareTag("Player")) {
                 //collision.GetComponent<CombateJugador>().TomarDaño(dañoAtaque);
                 Debug.Log("DAÑOOOOOO");
+            }
+            if (collision.CompareTag("NPC")) {
+                TomarDaño(20);
             }
         }
     }
