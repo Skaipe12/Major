@@ -2500,6 +2500,7 @@ GameObject:
   - component: {fileID: 353601320}
   - component: {fileID: 353601323}
   - component: {fileID: 353601324}
+  - component: {fileID: 353601325}
   m_Layer: 0
   m_Name: 44
   m_TagString: Untagged
@@ -2628,6 +2629,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc4d2580dbf46ab4aa11b07a0acde427, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &353601325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353601319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5f85af74bc921f44bc829a284917de8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  state: 0
+  caja11: {fileID: 0}
+  caja12: {fileID: 0}
+  caja13: {fileID: 0}
+  caja14: {fileID: 0}
+  caja21: {fileID: 0}
+  caja22: {fileID: 0}
+  caja23: {fileID: 0}
+  caja24: {fileID: 0}
+  caja31: {fileID: 0}
+  caja32: {fileID: 0}
+  caja33: {fileID: 0}
+  caja34: {fileID: 0}
+  caja41: {fileID: 0}
+  caja42: {fileID: 0}
+  caja43: {fileID: 0}
+  caja44: {fileID: 353601319}
 --- !u!1 &363446369
 GameObject:
   m_ObjectHideFlags: 0
@@ -4953,6 +4983,7 @@ GameObject:
   - component: {fileID: 810192768}
   - component: {fileID: 810192767}
   - component: {fileID: 810192766}
+  - component: {fileID: 810192770}
   m_Layer: 5
   m_Name: botonReturn
   m_TagString: Untagged
@@ -5075,6 +5106,35 @@ RectTransform:
   m_AnchoredPosition: {x: 576, y: 188}
   m_SizeDelta: {x: 639.2316, y: 119.8559}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &810192770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810192765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5f85af74bc921f44bc829a284917de8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  state: 0
+  caja11: {fileID: 0}
+  caja12: {fileID: 0}
+  caja13: {fileID: 0}
+  caja14: {fileID: 0}
+  caja21: {fileID: 0}
+  caja22: {fileID: 0}
+  caja23: {fileID: 0}
+  caja24: {fileID: 0}
+  caja31: {fileID: 0}
+  caja32: {fileID: 0}
+  caja33: {fileID: 0}
+  caja34: {fileID: 0}
+  caja41: {fileID: 0}
+  caja42: {fileID: 0}
+  caja43: {fileID: 0}
+  caja44: {fileID: 0}
 --- !u!1 &811564105
 GameObject:
   m_ObjectHideFlags: 0
@@ -6175,7 +6235,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5f85af74bc921f44bc829a284917de8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pos1: {fileID: 1435349477}
+  state: 0
+  caja11: {fileID: 1435349477}
+  caja12: {fileID: 0}
+  caja13: {fileID: 0}
+  caja14: {fileID: 0}
+  caja21: {fileID: 0}
+  caja22: {fileID: 0}
+  caja23: {fileID: 0}
+  caja24: {fileID: 0}
+  caja31: {fileID: 0}
+  caja32: {fileID: 0}
+  caja33: {fileID: 0}
+  caja34: {fileID: 0}
+  caja41: {fileID: 0}
+  caja42: {fileID: 0}
+  caja43: {fileID: 0}
+  caja44: {fileID: 0}
 --- !u!1 &962798698
 GameObject:
   m_ObjectHideFlags: 0

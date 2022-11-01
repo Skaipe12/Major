@@ -19,7 +19,7 @@ public class BotonesOhH1 : MonoBehaviour
 
     public void Regresar()
     {
-        SceneManager.LoadScene("Inicio");
+        SceneManager.LoadScene("Nivel1");
     }
 
     public void verSolucion()

@@ -5,15 +5,27 @@ using UnityEngine;
 public class Caja11 : MonoBehaviour
 {
     int contador = 0;
+    bool solucion = false;
 
     void OnMouseDown()
     {
         contador++;
 
-        if (contador%3 == 1)
+        if (contador % 3 == 1)
         {
-            Debug.Log("Has ganado");
+            solucion = true;
+     
         }
+        else
+        {
+            solucion = false;
+        }
+
+    }
+
+    public bool Ganar()
+    {
+        return solucion;
     }
 
 }
