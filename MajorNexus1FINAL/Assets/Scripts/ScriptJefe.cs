@@ -8,12 +8,11 @@ public class ScriptJefe : MonoBehaviour
     public Rigidbody2D rbd2D;
     public Transform jugador;
     private bool mirandoDerecha = true;
+    public GameObject text;
 
     [Header("Vida")]
 
     [SerializeField] private float vida;
-
-    [SerializeField] private BarraDeVida BarraDeVida;
 
     [Header("Ataque")]
 
@@ -27,31 +26,22 @@ public class ScriptJefe : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         rbd2D = GetComponent<Rigidbody2D>();
-        BarraDeVida.InicializarBarraDeVida(vida);
         jugador = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         trampasLayer = LayerMask.NameToLayer("Trampas");
     }
 
-   
 
-    public void TomarDaño(float daño)
-    {
-        vida -= daño;
-        BarraDeVida.CambiarVidaActual(vida);
 
-        if (vida <= 0)
-        {
-            animator.SetTrigger("Muerte");
-        }
 
-    }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
 
         if (collision.gameObject.layer == trampasLayer)
         {
-            Debug.Log("on trigger");
+            text.SetActive(true);
+            Muerte();
+            
         }
     }
 
@@ -79,9 +69,7 @@ public class ScriptJefe : MonoBehaviour
                 //collision.GetComponent<CombateJugador>().TomarDaño(dañoAtaque);
                 Debug.Log("DAÑOOOOOO");
             }
-            if (collision.CompareTag("NPC")) {
-                TomarDaño(20);
-            }
+            
         }
     }
 
