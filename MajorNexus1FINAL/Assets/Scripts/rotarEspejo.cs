@@ -7,6 +7,9 @@ public class rotarEspejo : MonoBehaviour
     public KeyCode cuadrado1;
     public GameObject cuadrado;
     bool rotate;
+    int objetivo = 7;
+    int cont;
+    public GameObject plataforma;
 
     
 
@@ -16,9 +19,16 @@ public class rotarEspejo : MonoBehaviour
         if (Input.GetKeyDown(cuadrado1))
         {
             Rotar();
+            cont++;
         }
-        
+
+        if (cont >= objetivo) {
+            StartCoroutine("wait");
+            
+        }
+
     }
+
 
     public void asignarCuadrado(GameObject c) {
         cuadrado = c;
@@ -31,6 +41,10 @@ public class rotarEspejo : MonoBehaviour
         rotate = false;
     }
 
-    
+    IEnumerator wait()
+    {
+        yield return new WaitForSeconds(5);
+        plataforma.SetActive(true);
+    }
 
 }
