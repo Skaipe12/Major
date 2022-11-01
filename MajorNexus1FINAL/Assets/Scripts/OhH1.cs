@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class OhH1 : MonoBehaviour
 {
@@ -64,7 +66,7 @@ public class OhH1 : MonoBehaviour
     }
 
 
-    public bool OnMouseDown()
+    private void OnMouseDown()
     {
          C11 = caja11.GetComponent<Caja11>().Ganar();
          C12 = caja12.GetComponent<Caja12>().Ganar();
@@ -85,15 +87,9 @@ public class OhH1 : MonoBehaviour
 
         if(C44 == true)
         {
-            Debug.Log("Has ganado");
-            state = true;
+            SceneManager.LoadScene("MenuInicial");
+         
         }
-        else
-        {
-            Debug.Log("Hola");
-        }
-
-        return state;
 
     }
 
